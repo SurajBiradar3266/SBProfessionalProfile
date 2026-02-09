@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Suraj Biradar - Software Engineer specializing in AUTOSAR Classic & AUTOSAR Adaptive."
+    />
+
+    <title>Suraj Biradar | AUTOSAR Classic & Adaptive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true">
+      <div class="bg__radar"></div>
+      <div class="bg__grid"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="topbar__left">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="topbar__id">
+          <div class="topbar__name">Suraj Biradar</div>
+          <div class="topbar__role">Software Engineer</div>
+        </div>
+      </div>
+      <nav class="topbar__nav">
+        <a href="#expertise">Expertise</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar__right">
+        <button class="btn btn--ghost" id="btnCopyEmail" type="button" title="Copy email">
+          Copy Email
+        </button>
+        <a class="btn btn--solid" href="#contact">Hire Me</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero" id="top">
+        <div class="hero__left">
+          <div class="kicker">
+            <span class="kicker__dot" aria-hidden="true"></span>
+            AUTOSAR Classic & AUTOSAR Adaptive
+          </div>
+          <h1 class="hero__title">
+            Building robust in-vehicle software
+            <span class="hero__titleAccent">with production discipline</span>.
+          </h1>
+          <p class="hero__subtitle">
+            I design, implement, and debug automotive embedded systems across Classic and Adaptive
+            platforms: communication stacks, diagnostics, integration, and performance-focused
+            engineering.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#work">View Work</a>
+            <a class="btn btn--ghost" href="#expertise">What I Do</a>
+          </div>
+
+          <div class="chips" id="chips">
+            <button class="chip" data-filter="classic" type="button">Classic</button>
+            <button class="chip" data-filter="adaptive" type="button">Adaptive</button>
+            <button class="chip" data-filter="diag" type="button">Diagnostics</button>
+            <button class="chip" data-filter="comm" type="button">Comms</button>
+            <button class="chip" data-filter="safety" type="button">Safety</button>
+            <button class="chip" data-filter="perf" type="button">Performance</button>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="panel panel--terminal">
+            <div class="panel__top">
+              <div class="panel__dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="panel__title">telemetry</div>
+            </div>
+            <div class="terminal" id="terminal">
+              <div class="terminal__line">
+                <span class="t-dim">[init]</span> profile: <span class="t-ok">surajbiradar3266</span>
+              </div>
+              <div class="terminal__line">
+                <span class="t-dim">[stack]</span> autosar: classic + adaptive
+              </div>
+              <div class="terminal__line">
+                <span class="t-dim">[bus]</span> can / lin / ethernet
+              </div>
+              <div class="terminal__line">
+                <span class="t-dim">[proto]</span> uds / doip / some-ip
+              </div>
+              <div class="terminal__line">
+                <span class="t-dim">[tool]</span> trace, profiling, integration, CI
+              </div>
+              <div class="terminal__prompt">
+                <span class="t-dim">suraj@ecu</span>:<span class="t-ok">~</span>$ <span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--card">
+            <div class="metricGrid">
+              <div class="metric">
+                <div class="metric__k">Focus</div>
+                <div class="metric__v">Embedded + Systems</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">Domains</div>
+                <div class="metric__v">ECU Integration</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">Mindset</div>
+                <div class="metric__v">Trace, Test, Triage</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">Style</div>
+                <div class="metric__v">Clean APIs</div>
+              </div>
+            </div>
+            <div class="panel__hint">Tip: click chips to highlight areas across the page.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="section__head">
+          <h2>Expertise</h2>
+          <p>Hands-on engineering across AUTOSAR layers, with a pragmatic, production-first approach.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-tags="classic comm">
+            <h3>AUTOSAR Classic</h3>
+            <p>
+              BSW configuration, integration, and debugging across communication stacks and runtime
+              behavior. Comfortable reading traces, correlating timing, and isolating root cause.
+            </p>
+            <ul class="bullets">
+              <li>CAN/LIN/Ethernet integration</li>
+              <li>RTE/BSW interaction awareness</li>
+              <li>Timing, CPU load, and watchdog considerations</li>
+            </ul>
+          </article>
+
+          <article class="card" data-tags="adaptive perf">
+            <h3>AUTOSAR Adaptive</h3>
+            <p>
+              Service-oriented systems, deployment-minded engineering, and performance-aware Linux
+              workflows. I care about observability and operability, not just features.
+            </p>
+            <ul class="bullets">
+              <li>Processes, services, lifecycle patterns</li>
+              <li>Diagnostics/telemetry instrumentation</li>
+              <li>Debugging with logs, traces, and profiling</li>
+            </ul>
+          </article>
+
+          <article class="card" data-tags="diag comm">
+            <h3>Diagnostics</h3>
+            <p>
+              Practical diagnostics implementation and triage. I treat diagnostics as a product:
+              reliable behavior, clear failure modes, and test coverage.
+            </p>
+            <ul class="bullets">
+              <li>UDS concepts, sessions, DIDs, routines</li>
+              <li>DoIP / networked diagnostics awareness</li>
+              <li>Failure analysis and reproducibility</li>
+            </ul>
+          </article>
+
+          <article class="card" data-tags="safety">
+            <h3>Quality & Safety</h3>
+            <p>
+              Engineering hygiene that survives scale: code reviews, traceability, CI, and
+              fault-aware design. I optimize for maintainability under real constraints.
+            </p>
+            <ul class="bullets">
+              <li>Defensive coding and clear interfaces</li>
+              <li>Test strategy and regression prevention</li>
+              <li>Issues triage and fix verification</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="section__head">
+          <h2>Technical Stack</h2>
+          <p>A representative toolchain. Replace items with your exact experience as needed.</p>
+        </div>
+
+        <div class="stack">
+          <div class="stack__col">
+            <div class="stack__title">Languages</div>
+            <div class="stack__items">
+              <span class="tag" data-tags="classic">C</span>
+              <span class="tag" data-tags="adaptive">C++</span>
+              <span class="tag" data-tags="perf">Python</span>
+              <span class="tag" data-tags="adaptive">Linux Shell</span>
+            </div>
+          </div>
+          <div class="stack__col">
+            <div class="stack__title">Protocols</div>
+            <div class="stack__items">
+              <span class="tag" data-tags="comm">CAN</span>
+              <span class="tag" data-tags="comm">LIN</span>
+              <span class="tag" data-tags="comm">Ethernet</span>
+              <span class="tag" data-tags="diag">UDS</span>
+              <span class="tag" data-tags="diag">DoIP</span>
+              <span class="tag" data-tags="adaptive comm">SOME/IP</span>
+            </div>
+          </div>
+          <div class="stack__col">
+            <div class="stack__title">Engineering</div>
+            <div class="stack__items">
+              <span class="tag" data-tags="perf">Tracing</span>
+              <span class="tag" data-tags="perf">Profiling</span>
+              <span class="tag" data-tags="safety">CI</span>
+              <span class="tag" data-tags="safety">Code Review</span>
+              <span class="tag" data-tags="safety">Debugging</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section__head">
+          <h2>Highlighted Work</h2>
+          <p>Add your real projects here. These cards are intentionally technical and concise.</p>
+        </div>
+
+        <div class="work">
+          <article class="workCard" data-tags="classic comm perf">
+            <div class="workCard__top">
+              <div class="workCard__title">Comms Integration Triage</div>
+              <div class="workCard__badge">Classic</div>
+            </div>
+            <p class="workCard__desc">
+              Isolated intermittent communication faults using traces and timing correlation; created
+              minimal repro scenarios; validated fix with regression coverage.
+            </p>
+            <div class="workCard__meta">
+              <span class="mono">CAN</span>
+              <span class="mono">Timing</span>
+              <span class="mono">Trace</span>
+            </div>
+          </article>
+
+          <article class="workCard" data-tags="diag adaptive">
+            <div class="workCard__top">
+              <div class="workCard__title">Diagnostics Observability</div>
+              <div class="workCard__badge">Adaptive</div>
+            </div>
+            <p class="workCard__desc">
+              Implemented diagnostics-oriented telemetry and log structure to speed up issue triage
+              across services and deployments.
+            </p>
+            <div class="workCard__meta">
+              <span class="mono">UDS</span>
+              <span class="mono">DoIP</span>
+              <span class="mono">Linux</span>
+            </div>
+          </article>
+
+          <article class="workCard" data-tags="safety perf">
+            <div class="workCard__top">
+              <div class="workCard__title">CI & Regression Hardening</div>
+              <div class="workCard__badge">Quality</div>
+            </div>
+            <p class="workCard__desc">
+              Reduced recurring defects by adding targeted regression tests and tightening review
+              checklists around high-risk areas.
+            </p>
+            <div class="workCard__meta">
+              <span class="mono">CI</span>
+              <span class="mono">Tests</span>
+              <span class="mono">Reviews</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Reach me quickly. I respond fastest on LinkedIn.</p>
+        </div>
+
+        <div class="contact">
+          <div class="panel panel--card">
+            <div class="contact__grid">
+              <div class="contact__item">
+                <div class="contact__k">LinkedIn</div>
+                <a
+                  class="contact__v mono"
+                  href="https://www.linkedin.com/in/surajbiradar3266"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/surajbiradar3266
+                </a>
+              </div>
+              <div class="contact__item">
+                <div class="contact__k">Email</div>
+                <div class="contact__v mono" id="emailValue">surajb3266@gmail.com</div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__k">Location</div>
+                <div class="contact__v mono">India</div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__k">Focus</div>
+                <div class="contact__v mono">AUTOSAR + Embedded</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--terminal">
+            <div class="panel__top">
+              <div class="panel__dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="panel__title">message.queue</div>
+            </div>
+            <div class="terminal terminal--tall">
+              <div class="terminal__line"><span class="t-dim">[queue]</span> awaiting request…</div>
+              <div class="terminal__line"><span class="t-dim">[hint]</span> include role + start date</div>
+              <div class="terminal__line"><span class="t-dim">[hint]</span> include project constraints</div>
+              <div class="terminal__line"><span class="t-dim">[hint]</span> include location/timezone</div>
+              <div class="terminal__prompt">
+                <span class="t-dim">compose</span>:<span class="t-ok">~/contact</span>$ <span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__left"><span class="mono">©</span> <span id="year"></span> Suraj Biradar</div>
+      <div class="footer__right"><a href="#top">Back to top</a></div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
